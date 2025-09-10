@@ -1,4 +1,3 @@
-
 // INCLUDES //
 #include <stdbool.h>
 #include <stdio.h>
@@ -34,7 +33,6 @@ int main() {
     } else if (strcmp(input, "exit") == 0) { // the exit command
       printf("Exiting...\n");
       break;
-
     } else if (strncmp(input, "add ", 4) == 0) {
       if (taskCount < MAX_TASKS) {
         strncpy(tasks[taskCount].name, input + 4, MAX_LEN - 1);
